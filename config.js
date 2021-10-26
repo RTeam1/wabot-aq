@@ -29,7 +29,7 @@ const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
  // var sticker_name = 'I hope you\'re fine'
   //var sticker_author = 'Nurutomo'
-  var sticker_name = '饾檷饾櫄饾櫀饾櫋 饾檨饾櫀饾櫌饾櫒 饾檰饾櫈饾櫋饾櫋饾櫄饾櫑' // ganti aja
+  var sticker_name = '𝙍𝙚𝙖𝙡 𝙁𝙖𝙢𝙨 𝙆𝙞𝙡𝙡𝙚𝙧' // ganti aja
 
 var sticker_author = '' // ganti aja
 } else {
