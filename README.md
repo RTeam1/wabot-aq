@@ -1,5 +1,8 @@
 # wabot-aq
 
+Mau Poto Profile panjang??
+vote ke nomer ini : wa.me/+7922481-65-16
+
 Simple WhatsApp Bot
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Nurutomo/wabot-aq)
