@@ -1,5 +1,25 @@
 let fs = require('fs')
 let chalk = require('chalk')
+let tum1 = fs.readFileSync('./gambar1.jpeg')
+let tum2 = fs.readFileSync('./gambar2.jpeg')
+let tum3 = fs.readFileSync('./gambar3.jpeg')
+const { MessageType} = require("@adiwajshing/baileys")
+const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
+let { performance } = require('perf_hooks')
+function kyun(seconds){
+function pad(s){
+return (s < 10 ? '0' : '') + s;
+}
+var hours = Math.floor(seconds / (60*60));
+var minutes = Math.floor(seconds % (60*60) / 60);
+var seconds = Math.floor(seconds % 60);
+//return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
+return `Runtime\n${pad(hours)}H ${pad(minutes)}M ${pad(seconds)}S`
+}
+runtime = process.uptime()
+teks = `${kyun(runtime)}`
+run = `${kyun(runtime)}`
+
 
 global.owner = ['6289677763976', '79224816516'] // Put your number here
 global.mods = [] // Want some help?
@@ -74,3 +94,6 @@ footer = 'ChokiBot'
 lolkey = 'rey2k21'
 global.wait = 'Tunggu Sebentar'
 bc = 'Choki'
+titler = run
+body = 'X-RyuuZeyy'
+gambar1 = tum1
