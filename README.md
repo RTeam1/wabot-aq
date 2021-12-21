@@ -1,7 +1,7 @@
 # wabot-aq
 
-Mau Poto Profile panjang??
-vote ke nomer ini : wa.me/+7922481-65-16
+
+
 
 Simple WhatsApp Bot
 
