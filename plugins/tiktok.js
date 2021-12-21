@@ -1,30 +1,37 @@
+/*
+Gausah Beli Apikey X Team lagi broo
+Mahal, mending pake lolhuman aja
+Setiap ada yang eror langsung di fix sama dia
+
+Tiktod By X-RyuuZeyy
+*/
+
 let fetch = require('node-fetch')
 let handler = async (m, { conn, args }) => {
-  if (!args[0]) throw 'Uhm...url nya mana?'
-  let res = await fetch(global.API('xteam', '/dl/tiktok', {
-    url: args[0]
-  }, 'APIKEY'))
-  if (res.status !== 200) throw await res.text()
-  let json = await res.json()
-  if (!json.status) throw json
-  let url = json.server_1 || json.info[0].videoUrl || ''
-  if (!url) throw 'Gagal mengambil url download'
-  let txt = json.info[0].text
-  for (let hashtag of json.info[0].hashtags) txt = txt.replace(hashtag, '*$&*')
-  await conn.sendFile(m.chat, url, 'tiktok.mp4', `
-▶ ${json.info[0].playCount} Views
-❤ ${json.info[0].diggCount} Likes
-🔁 ${json.info[0].shareCount} Shares
-💬 ${json.info[0].commentCount} Comments
-🎵 ${json.info[0].musicMeta.musicName} by ${json.info[0].musicMeta.musicAuthor}
-- *By:* ${json.info[0].authorMeta.nickName} (${json.info[0].authorMeta.name})
+if (!args[0]) throw 'Uhm..url nya mana?'
+m.reply(wait)
+let res = await fetch(`https://api.lolhuman.xyz/api/tiktok?apikey=${lolkey}&url=${args[0]}`)
+if (!res.ok) throw await res.text()
+let json = await res.json()
+if (!json.status) throw json
+let { description, author, statistic, link } = json.result
+await conn.sendFile(m.chat, link, 'tt.mp4', `
+▶ ${statistic.playCount} Views
+❤ ${statistic.diggCount} Likes
+🔁 ${statistic.shareCount} Shares
+💬 ${statistic.commentCount} Comments
+- *By:* ${author.nickname} (${author.username})
 - *Desc:*
-${txt}
-  `.trim(), m)
+${description}
+`, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
 }
-handler.help = ['tiktok'].map(v => v + ' <url>')
+
+handler.help = ['tiktok <url>']
 handler.tags = ['downloader']
-
+//handler.command = /^tiktok$/i
 handler.command = /^(tik(tok)?(dl)?)$/i
-
+handler.limit = true
 module.exports = handler
+
+
+//await conn.sendFile(m.chat, url, 'tiktok.mp4', kasihcaption, m, false, { contextInfo: { forwardingScore: 999, isForwarded: true }})
