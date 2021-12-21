@@ -68,9 +68,7 @@
     "xmldom": "^0.6.0",
     "yargs": "^17.0.1",
     "zip": "^1.2.0",
-
     "zs-extract": "^1.4.0",
-
     "moment-timezone": "^0.5.32"
   }
 }
