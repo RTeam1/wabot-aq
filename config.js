@@ -1,7 +1,7 @@
 let fs = require('fs')
 let chalk = require('chalk')
 
-global.owner = ['6289677763976', '6283808135990', '79224816516'] // Put your number here
+global.owner = ['6289677763976', '79224816516'] // Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -59,3 +59,8 @@ fs.watchFile(file, () => {
   delete require.cache[file]
   require(file)
 })
+
+// Tambahan By Me (RyuuZeyy)
+footer = 'ChokiBot'
+lolkey = 'rey2k21'
+global.wait = 'Tunggu Sebentar'
