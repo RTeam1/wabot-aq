@@ -34,7 +34,7 @@ const defaultMenu = {
 ╭─「 ${namabot} 」
 │ 
 │
-│ Hai %tag 
+│ Hai %tagsender
 │ ${ucapan()}
 │
 │ Tersisa *%limit Limit*
@@ -80,7 +80,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     let { exp, limit, level, role } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let name = conn.getName(m.sender)
-    let tag = `@${m.sender.split`@`[0]}`
+    let tagsender = `@${m.sender.split`@`[0]}`
     let d = new Date(new Date + 3600000)
     let locale = 'id'
     // d.getTimeZoneOffset()
