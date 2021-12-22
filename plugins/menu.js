@@ -1,5 +1,6 @@
 let fs = require('fs')
 let path = require('path')
+let moment = require('moment-timezone')
 let levelling = require('../lib/levelling')
 let tags = {
   'main': 'Main',
@@ -30,24 +31,41 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-╭─「 %me 」
-│ Hai, %name!
+╭─「 ${namabot} 」
+│ 
+│
+│ Hai %tag 
+│ ${ucapan()}
 │
 │ Tersisa *%limit Limit*
 │ Role *%role*
 │ Level *%level (%exp / %maxexp)* [%xp4levelup lagi untuk levelup]
 │ %totalexp XP in Total
 │ 
-│ Tanggal: *%week %weton, %date*
-│ Tanggal Islam: *%dateIslamic*
-│ Waktu: *%time*
+│ Hari : *%week %weton*
+│ Tanggal : *%date*
+│ Tanggal Islam : 
+│ *%dateIslamic*
+│ Jam : *%time* (USA)
 │
-│ Uptime: *%uptime (%muptime)*
-│ Database: %rtotalreg of %totalreg
-│ Github:
+│ Uptime : *%uptime (%muptime)*
+│ Database : %rtotalreg of %totalreg
+│ Github :
 │ %github
+│
+│
+│ Group 1 :
+│ ${gc1}
+│
+│ Group 2 :
+│ ${gc2}
+│
+│ Group 3 :
+│ ${gc3}
+│
+│
 ╰────
-%readmore`.trimStart(),
+`.trimStart(),
   header: '╭─「 %category 」',
   body: '│ • %cmd %islimit %isPremium',
   footer: '╰────\n',
@@ -62,6 +80,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     let { exp, limit, level, role } = global.db.data.users[m.sender]
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let name = conn.getName(m.sender)
+    let tag = `@${m.sender.split`@`[0]}`
     let d = new Date(new Date + 3600000)
     let locale = 'id'
     // d.getTimeZoneOffset()
@@ -183,4 +202,23 @@ function clockString(ms) {
   let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
   let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
   return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')
+}
+
+// Ucapan Selamat
+function ucapan() {
+    const time = moment.tz('Asia/Jakarta').format('HH')
+    res = "Selamat dinihari"
+    if (time >= 4) {
+        res = "Selamat pagi 🌄🌤️"
+    }
+    if (time > 10) {
+        res = "Selamat siang🌞💫"
+    }
+    if (time >= 15) {
+        res = "Selamat sore🌝✨"
+    }
+    if (time >= 18) {
+        res = "Selamat malam🌃🌚"
+    }
+    return res
 }
