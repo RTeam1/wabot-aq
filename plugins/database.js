@@ -19,8 +19,9 @@ handler.botAdmin = false
 handler.fail = null
 
 module.exports = handler
-
+/*
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
 
 const randomID = length => require('crypto').randomBytes(Math.ceil(length * .5)).toString('hex').slice(0, length)
+*/
