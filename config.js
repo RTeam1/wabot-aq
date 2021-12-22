@@ -97,4 +97,4 @@ bc = 'Choki'
 titler = run
 body = 'X-RyuuZeyy'
 gambar1 = tum1
-gambar1 = tum2
+gambar2 = tum2
