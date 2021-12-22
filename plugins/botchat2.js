@@ -38,7 +38,7 @@ runtime = process.uptime()
 							}
 					}
 					//m.reply(`Ada yang bida saya bantu?\n\n${run}`)
-conn.sendMessage(m.chat, `⬣━━〔 ---------- 〕━━⬣\nHai ${pushname2} ${ucapan()} Ada yang bisa saya bantu?\n⬣━━〔 ---------- 〕━━⬣\n`, 'conversation', {quoted: m, thumbnail: img2, contextInfo:{externalAdReply: {title: teks, body: `${run}`, sourceUrl: namaig, thumbnail: img1}}})
+conn.sendMessage(m.chat, `⬣━━〔 ---------- 〕━━⬣\nHai ${pushname2} ${ucapan()} Ada yang bisa saya bantu?\n⬣━━〔 ---------- 〕━━⬣\n`, 'conversation', {quoted: m, thumbnail: gambar2, contextInfo:{externalAdReply: {title: teks, body: `${run}`, sourceUrl: namaig, thumbnail: gambar1}}})
 }
 handler.customPrefix = /^(P|p|Hallo|halo|Halo|hallo|hi|helo|hai|hi|Hai|Helo|Hello|oy)$/i
 handler.command = new RegExp
