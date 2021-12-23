@@ -2,13 +2,15 @@
 
 ## whatsapp number
 
-* [`WhatsApp Owner`](https://wa.me/79224816516)
+* [`My WhatsApp`](https://wa.me/79224816516)
 
 Ganti PP grup : 
 #setpp
 
 Ganti PP Bot :
 #setbotpp
+
+
 
 
 Simple WhatsApp Bot
