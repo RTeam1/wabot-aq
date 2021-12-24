@@ -1,7 +1,7 @@
 let util = require('util')
 let simple = require('./lib/simple')
 let { MessageType } = require('@adiwajshing/baileys')
-
+let { Presence, GroupSettingChange } = require('@adiwajshing/baileys')
 const isNumber = x => typeof x === 'number' && !isNaN(x)
 const delay = ms => isNumber(ms) && new Promise(resolve => setTimeout(resolve, ms))
 module.exports = {
@@ -22,6 +22,13 @@ module.exports = {
       }
       m.exp = 0
       m.limit = false
+      this.updatePresence(m.chat, Presence.recording)
+this.updatePresence(m.chat, Presence.composing)
+this.updatePresence(m.chat, Presence.recording)
+this.updatePresence(m.chat, Presence.composing)
+this.updatePresence(m.chat, Presence.recording)
+this.updatePresence(m.chat, Presence.composing)
+this.updatePresence(m.chat, Presence.recording)
       try {
         let user = global.db.data.users[m.sender]
         if (typeof user !== 'object') global.db.data.users[m.sender] = {}
