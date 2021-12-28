@@ -14,14 +14,14 @@ var hours = Math.floor(seconds / (60*60));
 var minutes = Math.floor(seconds % (60*60) / 60);
 var seconds = Math.floor(seconds % 60);
 //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
-return `Runtime\n${pad(hours)}H ${pad(minutes)}M ${pad(seconds)}S`
+return `${pad(hours)}H ${pad(minutes)}M ${pad(seconds)}S`
 }
 runtime = process.uptime()
 teks = `${kyun(runtime)}`
 run = `${kyun(runtime)}`
 
 
-global.owner = ['6289677763976', '79224816516'] // Put your number here
+global.owner = ['6289677763976', '79224816516', '62857244470788', '6281362730880', '62895359557749'] // Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
@@ -94,7 +94,8 @@ footer = 'ChokiBot'
 lolkey = 'rey2k21'
 global.wait = 'Tunggu Sebentar'
 bc = 'Choki'
-titler = run
-body = 'X-RyuuZeyy'
+titler = '𝙍𝙚𝙖𝙡 𝙁𝙖𝙢𝙨 𝙆𝙞𝙡𝙡𝙚𝙧'
+body = run
+
 gambar1 = tum1
 gambar2 = tum2

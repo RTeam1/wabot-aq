@@ -13,7 +13,7 @@ function connect(conn, PORT) {
         res.end(await qrcode.toBuffer(_qr))
     })
     conn.on('qr', qr => {
-        _qr = qr
+        _qr = qr 
     })
     
     let server = app.listen(PORT, () => console.log('App listened on port', PORT))
