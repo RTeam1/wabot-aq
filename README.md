@@ -1,8 +1,8 @@
 # wabot-aq
 
 ## whatsapp number
-Kalo ada yang eror, tolong lapor ke saya di nomer ini, terimakasih
-* [`ReyTod`](https://wa.me/79224816516)
+Kalo ada yang eror, tolong lapor ke saya di nomer WhangSaff ini, terimakasih
+* [`WhangSaff`](https://wa.me/79224816516?text=Assalamualaikum+Banhh+🐦)
 
 
 
