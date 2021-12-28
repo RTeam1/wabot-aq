@@ -21,7 +21,7 @@ teks = `${kyun(runtime)}`
 run = `${kyun(runtime)}`
 
 
-global.owner = ['6289677763976', '79224816516', '62857244470788', '6281362730880', '62895359557749'] // Put your number here
+global.owner = ['0']// Put your number here
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
