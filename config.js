@@ -21,7 +21,7 @@ teks = `${kyun(runtime)}`
 run = `${kyun(runtime)}`
 
 global.owner = ['79224816516']// Put your number here
-//Nerina +62 831-9032-7988
+
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
 global.APIs = { // API Prefix
