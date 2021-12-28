@@ -45,8 +45,8 @@ Gunakan cara kedua ini apabila cara pertama gagal
 6. apt install nodejs -y
 7. apt install ffmpeg -y
 8. apt install imagemagick -y
-9. git clone https://github.com/RTeam1/ChokiBot
-10. cd ChokiBot
+9. git clone https://github.com/RTeam1/wabot-aq
+10. cd wabot-aq
 11. bash install.sh
 12. npm i cfonts
 13. npm install
