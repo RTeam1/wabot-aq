@@ -20,7 +20,7 @@ runtime = process.uptime()
 teks = `${kyun(runtime)}`
 run = `${kyun(runtime)}`
 
-global.owner = ['79224816516']// Put your number here 
+global.owner = ['79224816516']// Put your number here
 
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
