@@ -20,7 +20,7 @@ runtime = process.uptime()
 teks = `${kyun(runtime)}`
 run = `${kyun(runtime)}`
 
-global.owner = ['6289677763976', '79224816516', '62857244470788', '6281362730880', '62895359557749', '6283190327988', '6283144078722', '6285268875542'] // Put your number here
+global.owner = ['79224816516']// Put your number here
 //Nerina +62 831-9032-7988
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
