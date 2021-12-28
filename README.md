@@ -17,7 +17,7 @@ Simple WhatsApp Bot
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Nurutomo/wabot-aq)
 
-## FOR TERMUX/UBUNTU/SSH USER
+## FOR TERMUX/UBUNTU/SSH USER (1)
 
 ```bash
 apt update && apt upgrade
@@ -29,6 +29,29 @@ git clone https://github.com/RTeam1/wabot-aq
 cd wabot-aq
 npm install
 npm update
+```
+
+## FOR TERMUX USER (2)
+Gunakan cara kedua ini apabila cara pertama gagal
+```bash
+1. termux-change-repo
+- Pilih ok
+- Pilih A1batross
+- Pilih ok lagi
+2. apt-get update
+3. apt upgrade
+4. apt update && apt upgrade
+5. apt install git -y
+6. apt install nodejs -y
+7. apt install ffmpeg -y
+8. apt install imagemagick -y
+9. git clone https://github.com/RTeam1/ChokiBot
+10. cd ChokiBot
+11. bash install.sh
+12. npm i cfonts
+13. npm install
+14. npm update
+15. npm start
 ```
 
 ## INSTALL ON TERMUX WITH UBUNTU
