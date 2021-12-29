@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text }) => {
   let yh = global.loli
   let url = yh[Math.floor(Math.random() * yh.length)]
-  let buttons = [
+  /*let buttons = [
     { buttonId: '/loli', buttonText: { displayText: 'Get Again' }, type: 1 }
   ]
   const buttonsMessage = {
@@ -14,6 +14,8 @@ Random Loli
   }
   const sendMsg = await conn.prepareMessageFromContent(m.chat, { buttonsMessage }, { quoted: m })
   conn.relayWAMessage(sendMsg)
+  */
+ await conn.sendFile(m.chat, url, 'gambar.jpeg', kasihcaption, m)
 }
 handler.command = /^(loli)$/i
 handler.tags = ['internet']
