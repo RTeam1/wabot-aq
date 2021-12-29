@@ -94,6 +94,6 @@ global.wait = 'Tunggu Sebentar'
 bc = 'Choki'
 titler = '𝙍𝙚𝙖𝙡 𝙁𝙖𝙢𝙨 𝙆𝙞𝙡𝙡𝙚𝙧'
 body = run
-
+kasihcaption = `©${namaig}\n\n©${namagithub}`
 gambar1 = tum1
 gambar2 = tum2
