@@ -1,11 +1,21 @@
 let handler = async m => m.reply(`
 ╭─「 Donasi • Pulsa 」
-│ • Indosat Ooredoo [085895086040]
-│ • Telkomsel [081334177340]
+│ • three
+│ • 0896-7776-3976
 ╰────
 
-╭─「 Donasi • Non Pulsa 」
-│ • https://saweria.co/Nurutomo
+╭─「 Donasi • Bank Virtual 」
+│ • OVO
+│ • 0896-7776-3976
+│ • DANA
+│ • 0896-7776-3976
+│ • GOPAY
+│ • 0896-7776-3976
+╰────
+
+╭─「 Donasi • Website 」
+│ • https://saweria.co/Rey404
+│ • https://trakteer.id/Rey404
 ╰────
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['donasi']
