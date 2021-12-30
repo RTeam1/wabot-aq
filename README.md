@@ -77,7 +77,7 @@ apt install wget curl git ffmpeg imagemagick build-essential libcairo2-dev libpa
 ubuntu
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
 apt install -y nodejs gcc g++ make
-git clone https://github.com/Nurutomo/wabot-aq
+git clone https://github.com/RTeam1/wabot-aq
 cd wabot-aq
 npm install
 npm update
