@@ -12,6 +12,6 @@ handler.tags = ['internet']
 
 handler.command = /^(meme)$/i
 
-handler.group = true
+
 
 module.exports = handler
