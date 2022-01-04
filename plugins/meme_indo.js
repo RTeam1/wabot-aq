@@ -9,6 +9,6 @@ conn.sendFile(m.chat, barbar.result, 'memeindo', JSON.stringify(barbar, null, 2)
 handler.command = /^(memeindo)$/i
 handler.register = false
 handler.private = false
-handler.limit = true
+handler.limit = false
 
 module.exports = handler
