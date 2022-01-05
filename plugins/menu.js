@@ -2,6 +2,10 @@ let fs = require('fs')
 let path = require('path')
 let moment = require('moment-timezone')
 let levelling = require('../lib/levelling')
+//const time = moment.tz('Asia/Jakarta').format('HH:mm:ss')
+let wib = moment.tz('Asia/Jakarta').format('HH:mm:ss')
+let wita = moment.tz('Asia/Makassar').format('HH:mm:ss')
+let wit = moment.tz('Asia/Jayapura').format('HH:mm:ss')
 let tags = {
   'main': 'Main',
   'game': 'Game',
@@ -29,6 +33,7 @@ let tags = {
   'info': 'Info',
   '': 'No Category',
 }
+
 const defaultMenu = {
   before: `
 ╭─「 ${namabot} 」
@@ -46,7 +51,12 @@ const defaultMenu = {
 │ Tanggal : *%date*
 │ Tanggal Islam : 
 │ *%dateIslamic*
-│ Jam : *%time* (USA)
+│ Jam Terminal : *%time* 
+│
+│ Jam Indonesia :
+│ ${wib} WIB
+│ ${wita} WITA
+│ ${wit} WIT
 │
 │ Uptime : *%uptime (%muptime)*
 │ Database : %rtotalreg of %totalreg
@@ -81,6 +91,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     let { min, xp, max } = levelling.xpRange(level, global.multiplier)
     let name = conn.getName(m.sender)
     let tagsender = `@${m.sender.split`@`[0]}`
+
     let d = new Date(new Date + 3600000)
     let locale = 'id'
     // d.getTimeZoneOffset()
