@@ -14,7 +14,7 @@ CFonts.say(`'${package.name}' By @${package.author.name || package.author}`, {
   align: 'center',
   gradient: ['red', 'magenta']
 })
-
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"
 var isRunning = false
 /**
  * Start a js file
