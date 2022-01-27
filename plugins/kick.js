@@ -1,22 +1,20 @@
-let handler = async (m, { conn, args }) => {
-  let ownerGroup = m.chat.split`-`[0] + '@s.whatsapp.net'
-  let users = m.mentionedJid.filter(u => !(u == ownerGroup || u.includes(conn.user.jid)))
-  for (let user of users) if (user.endsWith('@s.whatsapp.net')) await conn.groupRemove(m.chat, [user])
+let handler = async (m, { conn }) => {
+let who = m.mentionedJid[0] ? m.mentionedJid[0] : m.qouted ? m.quoted.sender : ''
+await conn.groupRemove(m.chat, [who || m.quoted.sender])
 }
-handler.help = ['kick', '-'].map(v => v + ' @user')
+handler.help = ['kick @tag atau reply chat']
 handler.tags = ['admin']
-handler.command = /^(kick|\-)$/i
-handler.owner = false
-handler.mods = false
-handler.premium = false
+handler.command = /^(kick|rk|k|\-)$/i
+
 handler.group = true
 handler.private = false
+handler.premium = false
 
-handler.admin = true
+handler.rowner = true
 handler.botAdmin = true
 
 handler.fail = null
-handler.limit = true
 
 module.exports = handler
+
 
