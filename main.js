@@ -1,5 +1,5 @@
 require('./config.js')
-const { WAConnection: _WAConnection } = require('@adiwajshing/baileys')
+const { WAConnection: _WAConnection, Browsers } = require('@adiwajshing/baileys')
 const cloudDBAdapter = require('./lib/cloudDBAdapter')
 const { generate } = require('qrcode-terminal')
 const syntaxerror = require('syntax-error')
@@ -51,7 +51,7 @@ if (!opts['test']) setInterval(async () => {
   await global.db.write()
 }, 60 * 1000) // Save every minute
 if (opts['server']) require('./server')(global.conn, PORT)
-
+conn.browserDescription = ["./RyuuTod", "Google", "3.0.0"];
 conn.user = {
   jid: '',
   name: '',
