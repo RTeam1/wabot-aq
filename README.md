@@ -6,7 +6,9 @@ Kalo ada yang eror, tolong lapor ke saya di nomer WhangSaff ini, terimakasih
 
 
 
-
+### Apikey Lolhuman??
+```lolkey = 'rey2k22'
+```
 Simple WhatsApp Bot 
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/RTeam1/wabot-aq)
