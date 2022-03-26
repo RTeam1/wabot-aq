@@ -20,7 +20,7 @@ runtime = process.uptime()
 teks = `${kyun(runtime)}`
 run = `${kyun(runtime)}`
 
-global.owner = ['601133147048']// Put your number here
+global.owner = ['505']// Put your number here
 
 global.mods = [] // Want some help?
 global.prems = [] // Premium user has unlimited limit
@@ -88,7 +88,7 @@ linkff = namaig
 namabot = 'SyamBot'
 namagithub = 'https://github.com/RTeam1'
 gcid = '972502255007-1406453544'
-footer = 'SyamBot'
+footer = 'RFK Bot'
 lolkey = 'rey2k21'
 global.wait = 'Tunggu Sebentar'
 bc = 'Syam'
